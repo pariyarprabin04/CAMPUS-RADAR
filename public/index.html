@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Campus Opportunity Radar</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="login" id="login">
+ <div class="lbox"><div class="brand">📡 Campus Opportunity Radar</div><h1>Sign in</h1><p class="lead">Users see opportunities from student groups. Developers review the posts.</p>
+  <div class="banner" id="banner" role="alert"></div>
+  <form id="lf" novalidate>
+   <div class="fld"><label for="em">Campus email</label><input id="em" type="email" autocomplete="username"><div class="msg" id="em-m"></div></div>
+   <div class="fld"><label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password"><div class="msg" id="pw-m"></div></div>
+   <button class="go" id="go">Sign in</button>
+  </form>
+  <div class="demos"><button type="button" data-demo="jiyoung.cho6@campus.demo"><b>Try as user</b><span>Student view</span></button><button type="button" data-demo="hyunwoo.park1@campus.demo"><b>Try as developer</b><span>Admin console</span></button></div>
+  <p class="lead" style="margin-top:16px;font-size:13px">Demo only. Accounts are checked in your browser. Password for all: radar2026</p>
+ </div>
+</section>
+<div id="app" hidden>
+ <div class="prev" id="prev" hidden>Previewing the user view. <button class="btn sm" id="back">Back to developer console</button></div>
+ <header class="top"><div class="brand">📡 Radar</div><span class="badge" id="badge"></span>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <button class="btn sm" id="asUser" hidden>View as user</button><span class="who" id="who"></span><button class="btn sm" id="out">Sign out</button></header>
+ <main id="main"></main>
+</div>
+<dialog id="dlg"></dialog><div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

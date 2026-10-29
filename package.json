@@ -1,0 +1,7 @@
+{
+  "name": "campus-opportunity-radar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Campus Opportunity Radar demo: opportunities collected from student groups",
+  "scripts": { "start": "node server.js" }
+}
